@@ -27,7 +27,7 @@ const Footer = () => {
           <Slogan>Copyright &copy; {year} <Link href="#!">  Chham Dararaksmey</Link>. All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/chhamgit">
+          <SocialIcons href="https://github.com/smey-cam">
             <AiFillGithub size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://www.linkedin.com/in/chham-dararaksmey-b7b1081a3/">

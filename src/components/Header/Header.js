@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
+import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 import { FaTelegram } from 'react-icons/fa';
 import logo from "../../assets/logo.png"
@@ -12,7 +12,7 @@ const Header = () => (
       <Link
         href="/"
         style={{ display: 'flex', alignItems: 'center', color: "white" }}>
-          <Image src={logo} alt="Logo" height={50} width={200} />
+        <Image src={logo} alt="Logo" height={50} width={200} />
       </Link>
     </Div1>
     <Div2>
@@ -27,7 +27,7 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="#skills" legacyBehavior>
+        <Link href="#experience" legacyBehavior>
           <NavLink>Experience</NavLink>
         </Link>
       </li>
@@ -36,11 +36,6 @@ const Header = () => (
           <NavLink>About</NavLink>
         </Link>
       </li>
-      {/* <li>
-        <a href="https://blog.vipuljha.com">
-          <NavLink>Blog</NavLink>
-        </a>
-      </li> */}
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/chhamgit">

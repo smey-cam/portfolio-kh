@@ -1,6 +1,6 @@
 import React from "react";
 import { Section, SectionDivider, SectionText, SectionTitle, } from "../../styles/GlobalComponents";
-import { List, ListContainer, ListItem, ListParagraph, ListTitle, } from "./TechnologiesStyles";
+import { List, ListContainer, ListItem, ListTitle, } from "./TechnologiesStyles";
 import { Skills } from './Skills'
 
 const Technologies = () => (
@@ -8,7 +8,7 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Skills</SectionTitle>
     <SectionText>
-    I have extensive experience working with a variety of technologies as a developer. I have developed and maintained multiple projects using these technologies, and I am always eager to learn more.
+      I have extensive experience working with a variety of technologies as a developer. I have developed and maintained multiple projects using these technologies, and I am always eager to learn more.
     </SectionText>
     <List>
       {Skills.map((Skill) => (
@@ -25,7 +25,6 @@ const Technologies = () => (
         </ListItem>
       ))}
     </List>
-    <SectionDivider colorAlt />
   </Section>
 );
 

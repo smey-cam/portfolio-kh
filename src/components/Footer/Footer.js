@@ -23,9 +23,6 @@ const Footer = () => {
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
-        <CompanyContainer>
-          <Slogan>Copyright &copy; {year} <Link href="#!">  Chham Dararaksmey</Link>. All rights reserved.</Slogan>
-        </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/smey-cam">
             <AiFillGithub size="3rem" />

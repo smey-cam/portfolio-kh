@@ -31,11 +31,6 @@ const Header = () => (
           <NavLink>Experience</NavLink>
         </Link>
       </li>
-      <li>
-        <Link href="#about" legacyBehavior>
-          <NavLink>About</NavLink>
-        </Link>
-      </li>
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/smey-cam">

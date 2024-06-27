@@ -17,4 +17,13 @@ export const projects = [
     visit: 'https://portfolio-kh-gamma.vercel.app/',
     id: 1,
   },
+  {
+    title: 'Tour Cam Website',
+    description: "Cambodia specialising in tailor-made, private guided tours to Siem Reap, Phnom Penh, Sihanoukville, Kampot and Kep.",
+    image: '/images/tourweb.png',
+    tags: ['HTML', 'CSS', 'Javascript', 'Bootstrap'],
+    source: 'https://github.com/smey-cam/web-tours-cam',
+    visit: 'https://web-tours-cam.vercel.app/',
+    id: 2,
+  },
 ];

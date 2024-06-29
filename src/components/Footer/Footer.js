@@ -51,7 +51,7 @@ const Footer = () => {
         </LinkColumn>
       </LinkList>
       <div>
-        <h1>Let's Get In Touch</h1>
+        <h1>Let Get In Touch</h1>
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput type="text" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder='First Name' />
           <StyledInput type="text" value={lastName} onChange={e => setLastName(e.target.value)} placeholder='Last Name' />

@@ -122,16 +122,17 @@ export const StyledForm = styled.form`
   border-radius: 5px;
 `
 export const StyledInput = styled.input`
-  width: 50%;
+  width: 100%;
   display: block;
   padding: 10px;
   margin-bottom:3rem;
   border: none;
   border-radius: 5px;
+  height:5rem
 `
 export const StyledInputArea = styled.input`
-  width: 50%;
-  height:10rem;
+  width: 100%;
+  height:12rem;
   display: block;
   padding: 10px;
   margin-bottom:3rem;
@@ -143,6 +144,7 @@ export const StyledButton = styled.button`
   background-color: #4caf50;
   color: white;
   padding: 10px;
+  height:5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -153,5 +155,5 @@ export const StyledButton = styled.button`
     opacity: 1.0;
   }
   opacity: ${props => !props.enabled ? 0.5 : 1};
-  width: 50%
+  width: 100%;
 `

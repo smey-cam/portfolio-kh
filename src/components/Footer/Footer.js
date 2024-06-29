@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle} from './FooterStyles';
 import { StyledButton, StyledForm, StyledInput, StyledInputArea } from '../Projects/ProjectsStyles';
+import MapCam from './MapCam';
 
 const Footer = () => {
   const today = new Date();
@@ -37,8 +38,10 @@ const Footer = () => {
   }
 
   return (
+    <>
     <FooterWrapper>
       <LinkList>
+      {/* <MapCam /> */}
         <LinkColumn>
           <LinkTitle>Chat</LinkTitle>
           <LinkItem href="https://web.telegram.org/k/#@darareaksmey">Telegram</LinkItem>
@@ -50,7 +53,7 @@ const Footer = () => {
           </LinkItem>
         </LinkColumn>
       </LinkList>
-      <div>
+      <div className='w-33'>
         <h1>Let Get In Touch</h1>
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput type="text" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder='First Name' />
@@ -61,6 +64,8 @@ const Footer = () => {
         </StyledForm>
       </div>
     </FooterWrapper>
+      <MapCam /> 
+      </>
   );
 };
 

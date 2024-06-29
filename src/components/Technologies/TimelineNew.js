@@ -57,19 +57,19 @@ const Timeline = () => {
         {
             year: 'April - 2023 ',
             events: [
-                'Lecturer at AEU (Office Application)'
+                'Lecturer at AEU as Office Application'
             ]
         },
         {
             year: '2019 - 2021',
             events: [
-                'MM Pharma Co.,LTD (Digital Marketing Social Media & IT Support'
+                'MM Pharma Co.,LTD as Digital Marketing Social Media & IT Support'
             ]
         },
         {
             year: '2018 - 2019',
             events: [
-                'Cambodian Distribution System (Database Administrator)'
+                'Cambodian Distribution System as Database Administrator'
             ]
         }
     ];

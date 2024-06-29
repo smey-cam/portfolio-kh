@@ -26,4 +26,22 @@ export const projects = [
     visit: 'https://web-tours-cam.vercel.app/',
     id: 2,
   },
+  {
+    title: 'Personal Finance Management System',
+    description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
+    image: '/images/eb.jpg',
+    tags: ['Reactjs', 'Javascript', 'Bootstrap'],
+    source: 'https://github.com/smey-cam/presonal-income-expense',
+    // visit: '',
+    id: 3,
+  },
+  {
+    title: 'School Management System',
+    description: "A School Management System (SMS) is an integrated platform designed to streamline and automate the various administrative and academic operations of a school. It enables efficient management of school resources, improves communication among stakeholders, and enhances the overall educational experience for students.",
+    image: '/images/abs.png',
+    tags: ['Nextjs', 'Core UI', 'Bootstrap'],
+    // source: 'https://github.com/smey-cam/presonal-income-expense',
+    // visit: '',
+    id: 4,
+  }
 ];

@@ -17,7 +17,7 @@ const Projects = () => (
             <HeaderThree title={p.title}>{p.title}</HeaderThree>
             <Hr />
 
-            <CardInfo className="card-info">{p.description}</CardInfo>
+            {/* <CardInfo className="card-info">{p.description}</CardInfo> */}
             <div>
               <TitleContent>Tech Stack</TitleContent>
               <Hr />

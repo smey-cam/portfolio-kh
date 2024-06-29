@@ -51,8 +51,8 @@ const Timeline = () => {
         {
             year: '2021 - Present',
             events: [
-                'Working at ARH Technology as Web Developer and Leader Team'
-            ]
+                'Working at ARH Technology as Web Developer and Leader Team',
+            ],
         },
         {
             year: 'April - 2023 ',

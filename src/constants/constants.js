@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: 'Personal Finance Management App',
+    title: 'Personal Finance',
     description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
     image: '/images/covid.jpg',
     tags: ['Android', 'XML', 'Firebase', 'Rest API'],

@@ -9,7 +9,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 padding-top: 3rem;
 padding-bottom: 3rem;
 place-items: center;
@@ -27,7 +27,7 @@ export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 400px;
+  width: 350px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -54,11 +54,11 @@ export const HeaderThree = styled.h3`
 `;
 
 export const Hr = styled.hr`
-  width: 50px;
-  height: 3px;
+  width: 0px;
+  height: 0px;
   margin: 8px auto;
   border: 0;
-  background: #d0bb57;
+  background: rgb(208, 187, 87);
 `;
 
 export const Intro = styled.div`
@@ -99,8 +99,9 @@ export const ExternalLinks = styled.a`
 color:#d4c0c0;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #6b3030;
+background: rgb(107, 48, 48);
 border-radius: 15px;
+cursor: pointer;
 transition: 0.5s;
 &:hover{
   background: #801414;
@@ -116,4 +117,41 @@ padding: 2rem;
 export const Tag = styled.li`
 color: #d8bfbf;
 font-size: 1.5rem;
+`
+export const StyledForm = styled.form`
+  border-radius: 5px;
+`
+export const StyledInput = styled.input`
+  width: 50%;
+  display: block;
+  padding: 10px;
+  margin-bottom:3rem;
+  border: none;
+  border-radius: 5px;
+`
+export const StyledInputArea = styled.input`
+  width: 50%;
+  height:10rem;
+  display: block;
+  padding: 10px;
+  margin-bottom:3rem;
+  border: none;
+  border-radius: 5px;
+`
+
+export const StyledButton = styled.button`
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+  }
+  &:enabled {
+    opacity: 1.0;
+  }
+  opacity: ${props => !props.enabled ? 0.5 : 1};
+  width: 50%
 `

@@ -1,13 +1,41 @@
-import React from 'react';
-import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Link } from '../../styles/GlobalComponents';
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
-import { FaTelegram } from 'react-icons/fa';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle} from './FooterStyles';
+import { StyledButton, StyledForm, StyledInput, StyledInputArea } from '../Projects/ProjectsStyles';
 
 const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: `${firstName} ${lastName}`,
+      subject: subject,
+      message: message,
+      to_email: 'dararaksmey064@gmail.com'
+    };
+
+    emailjs.send('service_83zkjxi', 'template_4univsj', templateParams, 'mgoulfslZziwWonPL')
+      .then((response) => {
+        alert("Thank you for contacting us.")
+        console.log('SUCCESS!', response.status, response.text);
+      }, (error) => {
+        console.log('FAILED...', error);
+      });
+
+    // Clear the form after submission
+    setFirstName('');
+    setLastName('');
+    setSubject('');
+    setMessage('');
+  }
+
   return (
     <FooterWrapper>
       <LinkList>
@@ -22,23 +50,16 @@ const Footer = () => {
           </LinkItem>
         </LinkColumn>
       </LinkList>
-      <SocialIconsContainer>
-        <SocialContainer>
-          <SocialIcons href="https://github.com/smey-cam">
-            <AiFillGithub size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/chham-dararaksmey-b7b1081a3/">
-            <AiFillLinkedin size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://web.telegram.org/k/#@darareaksmey">
-            <FaTelegram size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://www.facebook.com/chham.dararaksmey.9?mibextid=ZbWKwL">
-            <AiFillFacebook size="3rem" />
-          </SocialIcons>
-        </SocialContainer>
-      </SocialIconsContainer>
-
+      <div>
+        <h1>Let's Get In Touch</h1>
+        <StyledForm onSubmit={handleSubmit}>
+          <StyledInput type="text" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder='First Name' />
+          <StyledInput type="text" value={lastName} onChange={e => setLastName(e.target.value)} placeholder='Last Name' />
+          <StyledInput type="text" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder='Subject' />
+          <StyledInputArea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' />
+          <StyledButton type="submit" disabled={!firstName || !lastName || !subject || !message}>Send Message</StyledButton>
+        </StyledForm>
+      </div>
     </FooterWrapper>
   );
 };

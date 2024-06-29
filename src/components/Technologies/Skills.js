@@ -1,5 +1,5 @@
 import { DiAndroid, DiTerminal, DiJava, DiHtml5, DiMongodb, DiWordpress } from "react-icons/di";
-import { SiFirebase, SiGit, SiDart, SiCss3, SiMysql, SiAmazonaws } from "react-icons/si";
+import { SiFirebase, SiGit, SiDart, SiCss3, SiMysql, SiAmazonaws, SiShopify, SiMicrosoftsqlserver, SiFigma, SiBisecthosting, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
 import { RiFlutterFill, RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
 import { TbBrandKotlin } from "react-icons/tb";
 import { FaLaravel } from "react-icons/fa";
@@ -35,12 +35,11 @@ export const Skills = [
     title: "Android",
     Description: () => <>Android Apps, ROMs, & Kernels</>,
   },
-
   {
-    slug: "mongodb",
-    Component: DiMongodb,
-    title: "MongoDB",
-    Description: () => <>Static webpages and portfolio projects</>,
+    slug: "hosting",
+    Component: SiBisecthosting,
+    title: "Hositing",
+    Description: () => <>Code management and open source contributions</>,
   },
   {
     slug: "sql",
@@ -49,10 +48,28 @@ export const Skills = [
     Description: () => <>Storing client and user data</>,
   },
   {
+    slug: "sqlService",
+    Component: SiMicrosoftsqlserver,
+    title: "SQL Server",
+    Description: () => <>Storing client and user data</>,
+  },
+  {
+    slug: "mongodb",
+    Component: DiMongodb,
+    title: "MongoDB",
+    Description: () => <>Static webpages and portfolio projects</>,
+  },
+  {
     slug: "wordpress",
     Component: DiWordpress,
     title: "WordPress",
     Description: () => <>Styling of my webpages</>,
+  },
+  {
+    slug: "shopify",
+    Component: SiShopify,
+    title: "Shopify",
+    Description: () => <>Code management and open source contributions</>,
   },
   {
     slug: "Laravel",
@@ -78,10 +95,22 @@ export const Skills = [
     title: "Git",
     Description: () => <>Code management and open source contributions</>,
   },
-  // {
-  //   slug: "hosting & Deployment",
-  //   Component: SiGit,
-  //   title: "Hosting & Deployment",
-  //   Description: () => <>Code management and open source contributions</>,
-  // },
+  {
+    slug: "figma",
+    Component: SiFigma,
+    title: "Figma",
+    Description: () => <>Code management and open source contributions</>,
+  },
+  {
+    slug: "Photoshop",
+    Component: SiAdobephotoshop,
+    title: "Adobe Photoshop",
+    Description: () => <>Code management and open source contributions</>,
+  },
+  {
+    slug: "illustrator",
+    Component: SiAdobeillustrator,
+    title: "Adobe Illustrator",
+    Description: () => <>Code management and open source contributions</>,
+  },
 ];

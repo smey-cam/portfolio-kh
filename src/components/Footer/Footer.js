@@ -52,6 +52,12 @@ const Footer = () => {
             dararaksmey167@gmail.com
           </LinkItem>
         </LinkColumn>
+        <LinkColumn>
+          <LinkTitle>Email</LinkTitle>
+          <LinkItem href="mailto:hey@vipuljha.com">
+            dararaksmey167@gmail.com
+          </LinkItem>
+        </LinkColumn>
       </LinkList>
       <div className='w-33'>
         <h1>Let Get In Touch</h1>

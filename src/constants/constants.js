@@ -12,7 +12,7 @@ export const projects = [
     title: 'Portfolio Website',
     description: "This was my personal portfolio website that has all my work and project experience, including my resume. It used to be my main portfolio before deploying this current portfolio.",
     image: '/images/portfolio.jpg',
-    tags: ['Nextjs', 'Bootstrap'],
+    tags: ['Nextjs', 'Emailjs', 'Tawk.to Chat', 'Bootstrap'],
     source: 'https://github.com/smey-cam/portfolio-kh',
     visit: 'https://portfolio-kh-gamma.vercel.app/',
     id: 1,

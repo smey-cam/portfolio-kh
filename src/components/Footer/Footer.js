@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle} from './FooterStyles';
+import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle } from './FooterStyles';
 import { StyledButton, StyledForm, StyledInput, StyledInputArea } from '../Projects/ProjectsStyles';
 import MapCam from './MapCam';
+import { Div3, SocialIcons } from '../Header/HeaderStyles';
+import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { FaTelegram } from 'react-icons/fa';
 
 const Footer = () => {
   const today = new Date();
@@ -39,39 +42,50 @@ const Footer = () => {
 
   return (
     <>
-    <FooterWrapper>
-      <LinkList>
-      {/* <MapCam /> */}
-        <LinkColumn>
-          <LinkTitle>Chat</LinkTitle>
-          <LinkItem href="https://web.telegram.org/k/#@darareaksmey">Telegram</LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:hey@vipuljha.com">
-            dararaksmey167@gmail.com
-          </LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:hey@vipuljha.com">
-            dararaksmey167@gmail.com
-          </LinkItem>
-        </LinkColumn>
-      </LinkList>
-      <div className='w-33'>
-        <h1>Let Get In Touch</h1>
-        <StyledForm onSubmit={handleSubmit}>
-          <StyledInput type="text" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder='First Name' />
-          <StyledInput type="text" value={lastName} onChange={e => setLastName(e.target.value)} placeholder='Last Name' />
-          <StyledInput type="text" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder='Subject' />
-          <StyledInputArea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' />
-          <StyledButton type="submit" disabled={!firstName || !lastName || !subject || !message}>Send Message</StyledButton>
-        </StyledForm>
-      </div>
-    </FooterWrapper>
-      <MapCam /> 
-      </>
+      <FooterWrapper>
+        <LinkList>
+          {/* <MapCam /> */}
+          <LinkColumn>
+            <LinkTitle>Chat</LinkTitle>
+            <LinkItem href="https://web.telegram.org/k/#@darareaksmey">Telegram</LinkItem>
+          </LinkColumn>
+          <LinkColumn>
+            <LinkTitle>Email</LinkTitle>
+            <LinkItem href="mailto:hey@vipuljha.com">
+              dararaksmey167@gmail.com
+            </LinkItem>
+          </LinkColumn>
+          <LinkColumn>
+          <LinkTitle>Social Media</LinkTitle>
+            <Div3>
+              <SocialIcons href="https://github.com/smey-cam">
+                <AiFillGithub size="3rem" />
+              </SocialIcons>
+              <SocialIcons href="https://www.linkedin.com/in/chham-dararaksmey-b7b1081a3/">
+                <AiFillLinkedin size="3rem" />
+              </SocialIcons>
+              <SocialIcons href="https://web.telegram.org/k/#@darareaksmey">
+                <FaTelegram size="3rem" />
+              </SocialIcons>
+              <SocialIcons href="https://www.facebook.com/chham.dararaksmey.9?mibextid=ZbWKwL">
+                <AiFillFacebook size="3rem" />
+              </SocialIcons>
+            </Div3>
+          </LinkColumn>
+        </LinkList>
+        <div className='w-33'>
+          <h1>Let Get In Touch</h1>
+          <StyledForm onSubmit={handleSubmit}>
+            <StyledInput type="text" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder='First Name' />
+            <StyledInput type="text" value={lastName} onChange={e => setLastName(e.target.value)} placeholder='Last Name' />
+            <StyledInput type="text" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder='Subject' />
+            <StyledInputArea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message' />
+            <StyledButton type="submit" disabled={!firstName || !lastName || !subject || !message}>Send Message</StyledButton>
+          </StyledForm>
+        </div>
+      </FooterWrapper>
+      <MapCam />
+    </>
   );
 };
 

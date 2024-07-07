@@ -43,5 +43,14 @@ export const projects = [
     // source: 'https://github.com/smey-cam/presonal-income-expense',
     // visit: '',
     id: 4,
-  }
+  },
+  {
+    title: 'Personal Finance[API]',
+    description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
+    image: '/images/apiPersonalFinance.jpg',
+    tags: ['NodeJs', 'ExpressJs', 'MongoDB'],
+    source: 'https://github.com/smey-cam/financial-management-api',
+    visit: '',
+    id: 6,
+  },
 ];

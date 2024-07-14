@@ -14,7 +14,7 @@ export const projects = [
     image: '/images/portfolio.jpg',
     tags: ['Nextjs', 'Emailjs', 'Tawk.to Chat', 'Bootstrap'],
     source: 'https://github.com/smey-cam/portfolio-kh',
-    visit: 'https://portfolio-kh-gamma.vercel.app/',
+    visit: '',
     id: 1,
   },
   {
@@ -30,9 +30,9 @@ export const projects = [
     title: 'Personal Finance Management System',
     description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
     image: '/images/eb.jpg',
-    tags: ['Reactjs', 'Javascript', 'Bootstrap'],
-    source: 'https://github.com/smey-cam/presonal-income-expense',
-    // visit: '',
+    tags: ['Nextjs', 'Javascript', 'Material UI'],
+    source: 'https://github.com/smey-cam/financial-management',
+    visit: 'https://personal-financial-kh.netlify.app/',
     id: 3,
   },
   {

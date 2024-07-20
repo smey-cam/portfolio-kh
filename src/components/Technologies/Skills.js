@@ -2,7 +2,7 @@ import { DiAndroid, DiTerminal, DiJava, DiHtml5, DiMongodb, DiWordpress } from "
 import { SiFirebase, SiGit, SiDart, SiCss3, SiMysql, SiAmazonaws, SiShopify, SiMicrosoftsqlserver, SiFigma, SiBisecthosting, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
 import { RiFlutterFill, RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
 import { TbBrandKotlin } from "react-icons/tb";
-import { FaLaravel } from "react-icons/fa";
+import { FaLaravel, FaPython } from "react-icons/fa";
 
 export const Skills = [
   {
@@ -78,16 +78,16 @@ export const Skills = [
     Description: () => <>Lambda functions for creating APIs</>,
   },
   {
+    slug: "Python",
+    Component: FaPython,
+    title: "Python",
+    Description: () => <>Lambda functions for creating APIs</>,
+  },
+  {
     slug: "terminal",
     Component: DiTerminal,
     title: "Bash",
     Description: () => <>Ease of life and build scripts</>,
-  },
-  {
-    slug: "firebase",
-    Component: SiFirebase,
-    title: "Firebase",
-    Description: () => <>Authentication, database and analytics</>,
   },
   {
     slug: "git",

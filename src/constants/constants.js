@@ -53,4 +53,13 @@ export const projects = [
     visit: '',
     id: 6,
   },
+  {
+    title: 'To-Do List',
+    description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
+    image: '/images/todo.png',
+    tags: ['Python', 'mySQL', 'Bootstrap'],
+    source: 'https://github.com/smey-cam/AI/tree/main/pythonvenv',
+    visit: '',
+    id: 6,
+  },
 ];

@@ -1,7 +1,6 @@
-import { DiAndroid, DiTerminal, DiJava, DiHtml5, DiMongodb, DiWordpress } from "react-icons/di";
-import { SiFirebase, SiGit, SiDart, SiCss3, SiMysql, SiAmazonaws, SiShopify, SiMicrosoftsqlserver, SiFigma, SiBisecthosting, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
-import { RiFlutterFill, RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
-import { TbBrandKotlin } from "react-icons/tb";
+import { DiAndroid, DiTerminal, DiMongodb, DiWordpress } from "react-icons/di";
+import { SiGit, SiDart, SiMysql, SiShopify, SiFigma, SiBisecthosting, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+import { RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
 import { FaLaravel, FaPython } from "react-icons/fa";
 
 export const Skills = [
@@ -49,7 +48,7 @@ export const Skills = [
   },
   {
     slug: "sqlService",
-    Component: SiMicrosoftsqlserver,
+    Component: "",
     title: "SQL Server",
     Description: () => <>Storing client and user data</>,
   },

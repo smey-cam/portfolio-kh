@@ -6,7 +6,7 @@ const TimelineContainer = styled.div`
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    padding-bottom: 5rem;
+    // padding-bottom: 5rem;
     padding-top: 3rem;
 `;
 

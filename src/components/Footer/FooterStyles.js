@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
-  max-width: 1040px;
+  width: calc(100vw - 96px);
+  max-width: 1080px;
+  background: linear-gradient(121.57deg, #13ADC7 18.77%, #945DD6 60.15%);
   padding: 2rem 48px 40px;
   margin: 1rem auto;
   box-sizing: content-box;
@@ -113,7 +114,7 @@ export const SocialContainer = styled.div`
 
 
 export const LinkList = styled.ul`
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	// border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
 	grid-template-columns: repeat(3, minmax(85px, 220px));
 	gap: 180px;
@@ -147,7 +148,7 @@ export const LinkTitle = styled.h4`
 	font-size: 12px;
 	line-height: 24px;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255,1);
 	margin-bottom: 16px;
 
 	@media ${props => props.theme.breakpoints.sm} {

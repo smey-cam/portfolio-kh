@@ -1,7 +1,7 @@
 import { DiMongodb, DiWordpress } from "react-icons/di";
 import { SiGit, SiMysql, SiFigma, SiAdobephotoshop, SiAdobeillustrator, SiMicrosoftsqlserver, SiJira, SiTrello, SiGithub, SiGitlab, SiHtml5, SiCss3, SiJavascript, SiPhp } from "react-icons/si";
 import { RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
-import { FaLaravel } from "react-icons/fa";
+import { FaLaravel, FaShopify } from "react-icons/fa";
 
 export const Skills = [
   // Frontend
@@ -108,6 +108,19 @@ export const Skills = [
     Component: DiWordpress,
     title: "WordPress",
     Description: () => <>Content management system</>,
+  },
+  {
+    slug: "shopify",
+    Component: FaShopify,
+    title: "Shopify",
+    Description: () => (
+      <>
+        Shopify is a powerful e-commerce platform that allows businesses to
+        create, manage, and scale online stores with ease. It provides built-in
+        tools for product management, payments, shipping, and marketing, making
+        it ideal for startups and growing businesses.
+      </>
+    ),
   },
   
   // Optional: Design Tools (if you want to keep them)

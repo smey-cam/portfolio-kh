@@ -33,6 +33,7 @@ export const List = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-bottom: 4rem;
+  margin-left: 3.5rem;
   
   @media ${props => props.theme.breakpoints.lg}{
     margin: 64px 0;

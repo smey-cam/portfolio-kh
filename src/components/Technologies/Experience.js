@@ -5,10 +5,10 @@ import TimelineNew from "./TimelineNew";
 
 const Experience = () => (
   <Section id="experience">
-    <SectionDivider divider />
     <SectionTitle>Work Experience</SectionTitle>
+    <SectionDivider divider />
     <TimelineNew />
-    <SectionDivider colorAlt />
+    {/* <SectionDivider colorAlt /> */}
   </Section>
 );
 

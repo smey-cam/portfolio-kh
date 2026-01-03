@@ -49,8 +49,8 @@ export default class MyDocument extends Document {
           <script
             src="https://embed.tawk.to/66816f9eeaf3bd8d4d1688cf/1i1kpo1ar"
             async
-            charset="UTF-8"
-            crossorigin="*"
+            charSet="UTF-8"
+            crossOrigin="anonymous"
           ></script>
         </body>
       </Html>

@@ -12,9 +12,9 @@ const Hero = (props) => (
           Allow me to introduce myself
         </SectionTitle>
         <SectionText>
-          Hi, I'm Chham Dararaksmey – a Senior Web Developer with 3.5+ years of experience specializing in building and maintaining full-stack applications. Whether starting from scratch or enhancing existing systems, I approach every project with dedication and a commitment to excellence.
-          I'm driven by a simple philosophy: attitude is everything. I bring 100% effort to everything I do and constantly seek opportunities to learn and grow. What excites me most is creating solutions that help others achieve their goals and make a real impact.
-          I completed my Master of Computer Science at Asia Euro University and hold a B.S. in Computer Science from RUPP University. I love connecting with fellow developers and potential collaborators. Let's connect!
+          {`Hi, I'm Chham Dararaksmey – a Senior Web Developer with 3.5+ years of experience specializing in building and maintaining full-stack applications. Whether starting from scratch or enhancing existing systems, I approach every project with dedication and a commitment to excellence.
+  I'm driven by a simple philosophy: attitude is everything. I bring 100% effort to everything I do and constantly seek opportunities to learn and grow. What excites me most is creating solutions that help others achieve their goals and make a real impact.
+  I completed my Master of Computer Science at Asia Euro University and hold a B.S. in Computer Science from RUPP University. I love connecting with fellow developers and potential collaborators. Let's connect!`}
         </SectionText>
         <div style={{ display: "flex", gap: "2rem" }}>
           <Button onClick={(e) => {

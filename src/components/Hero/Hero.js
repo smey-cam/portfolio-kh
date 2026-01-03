@@ -12,17 +12,21 @@ const Hero = (props) => (
           Allow me to introduce myself
         </SectionTitle>
         <SectionText>
-          I am Chham Dararaksmey, Have over 3 years of experience in maintaining existing applications or creating one from scratch.
-          Lives by Attitude is everything. and always 100% in everything I do.
-          Constantly strive to learn new things and seek advices for improvement in everything.
-          Passionate in coding, especially when it involves creating applications that help others to achieve success.
-          Graduated from RUPP University with a bachelor degree of B.S. in Computer Science.
-          Feel free to contact me if you need my help or know more about me!
+          Hi, I'm Chham Dararaksmey – a Senior Web Developer with 3.5+ years of experience specializing in building and maintaining full-stack applications. Whether starting from scratch or enhancing existing systems, I approach every project with dedication and a commitment to excellence.
+          I'm driven by a simple philosophy: attitude is everything. I bring 100% effort to everything I do and constantly seek opportunities to learn and grow. What excites me most is creating solutions that help others achieve their goals and make a real impact.
+          I completed my Master of Computer Science at Asia Euro University and hold a B.S. in Computer Science from RUPP University. I love connecting with fellow developers and potential collaborators. Let's connect!
         </SectionText>
-        <Button onClick={(e) => {
-          e.preventDefault();
-          window.location.href = '/files/resume.pdf';
-        }}>My Resume</Button>
+        <div style={{ display: "flex", gap: "2rem" }}>
+          <Button onClick={(e) => {
+            e.preventDefault();
+            window.location.href = '/files/resume.pdf';
+          }}>My Resume</Button>
+
+          <Button onClick={(e) => {
+            e.preventDefault();
+            window.location.href = 'https://drive.google.com/drive/folders/1RrTv_g4RS0UZF87H6Excl6MnnI_89kj2';
+          }}>Achievements</Button>
+        </div>
       </LeftSection>
     </Section>
   </>

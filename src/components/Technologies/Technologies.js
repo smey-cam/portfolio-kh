@@ -18,12 +18,12 @@ const Technologies = () => {
       <SectionDivider divider />
       <SectionTitle>Skills</SectionTitle>
       <SectionText>
-        I have extensive experience working with a variety of technologies as a developer. I have developed and maintained multiple projects using these technologies, and I am always eager to learn more.
+          I specialize in full-stack web development with a comprehensive toolkit that spans modern frontend frameworks, robust backend technologies, and efficient database solutions. My experience includes building responsive user interfaces, developing scalable APIs, managing complex databases, and collaborating effectively using industry-standard tools and workflows. I&apos;m committed to continuous learning and applying best practices to deliver high-quality, maintainable solutions.
       </SectionText>
       
       {Object.entries(categories).map(([category, skills]) => (
         <div key={category}>
-          <h3 style={{color: '#9cc9e3', marginTop: '2rem', marginBottom: '1rem', fontSize: '2.5rem'}}>{category}</h3>
+          <h3 style={{color: '#9cc9e3', marginTop: '1rem', marginBottom: '2rem', fontSize: '2.5rem'}}>{category}</h3>
           <List>
             {skills.map((Skill) => {
               const SkillComponent = Skill.Component;

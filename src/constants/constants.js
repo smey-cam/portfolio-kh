@@ -31,8 +31,8 @@ export const projects = [
     description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
     image: '/images/eb.jpg',
     tags: ['Nextjs', 'Javascript', 'Material UI'],
-    source: 'https://github.com/smey-cam/financial-management',
-    visit: 'https://personal-financial-kh.netlify.app/',
+    source: 'https://github.com/chhamdararaksmeydeveloper168-del/personal-income-expense',
+    visit: 'https://personal-income-expense.onrender.com',
     id: 3,
   },
   {
@@ -70,5 +70,14 @@ export const projects = [
     source: 'https://github.com/raksmeyaeu/soeungkhmer',
     visit: 'https://sreymoeunsoeungkhmer.netlify.app/',
     id: 7,
+  },
+  {
+    title: 'Movie Streaming Platform',
+    description: "Movie Stream Web App is an online platform that allows users to browse, search, and stream movies instantly. It provides a smooth user interface, fast loading performance, and organized categories to enhance the entertainment experience across desktop and mobile devices.",
+    image: '/images/movie.jpg',
+    tags: ['ReactJs', 'Tailwindcss', 'TypeScript'],
+    source: 'https://github.com/movie-stream-org-kh/movie-stream-web-app',
+    visit: 'https://movie-stream-web-app.onrender.com/',
+    id: 8,
   },
 ];

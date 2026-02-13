@@ -19,7 +19,7 @@ const Projects = () => (
 
             {/* <CardInfo className="card-info">{p.description}</CardInfo> */}
             <div>
-              <TitleContent>Tech Stack</TitleContent>
+              <TitleContent>Technologies</TitleContent>
               <Hr />
               <TagList>
                 {p.tags.map((t, i) => {

@@ -40,8 +40,8 @@ export const projects = [
     description: "A School Management System (SMS) is an integrated platform designed to streamline and automate the various administrative and academic operations of a school. It enables efficient management of school resources, improves communication among stakeholders, and enhances the overall educational experience for students.",
     image: '/images/abs.png',
     tags: ['Reactjs', 'Bootstrap'],
-    // source: 'https://github.com/smey-cam/presonal-income-expense',
-    // visit: '',
+    source: 'https://github.com/school-management-system-org-kh/edu-backend',
+    visit: 'https://edu-backend-393j.onrender.com',
     id: 4,
   },
   {

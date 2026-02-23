@@ -1,14 +1,5 @@
 export const projects = [
   {
-    title: 'Personal Finance',
-    description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
-    image: '/images/covid.jpg',
-    tags: ['Android', 'XML', 'Firebase', 'Rest API'],
-    source: 'https://github.com/Personal-Income/Androidv1',
-    visit: '',
-    id: 0,
-  },
-  {
     title: 'Portfolio Website',
     description: "This was my personal portfolio website that has all my work and project experience, including my resume. It used to be my main portfolio before deploying this current portfolio.",
     image: '/images/portfolio.jpg',
@@ -30,7 +21,7 @@ export const projects = [
     title: 'Personal Finance Management System',
     description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
     image: '/images/eb.jpg',
-    tags: ['Nextjs', 'Javascript', 'Material UI'],
+    tags: ['MERN stack','Tailwind', 'MongoDB'],
     source: 'https://github.com/chhamdararaksmeydeveloper168-del/personal-income-expense',
     visit: 'https://personal-income-expense.onrender.com',
     id: 3,
@@ -45,22 +36,13 @@ export const projects = [
     id: 4,
   },
   {
-    title: 'Personal Finance[API]',
-    description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
-    image: '/images/apiPersonalFinance.jpg',
-    tags: ['NodeJs', 'ExpressJs', 'MongoDB'],
-    source: 'https://github.com/smey-cam/financial-management-api',
-    visit: '',
-    id: 5,
-  },
-  {
     title: 'To-Do List',
     description: "Personal financial management (PFM) refers to the process of managing one's finances effectively to achieve financial goals and objectives.",
     image: '/images/todo.png',
     tags: ['Python', 'mySQL', 'Bootstrap'],
     source: 'https://github.com/smey-cam/AI/tree/main/pythonvenv',
     visit: '',
-    id: 6,
+    id: 5,
   },
   {
     title: 'Web Site Ecommerce',
@@ -69,7 +51,7 @@ export const projects = [
     tags: ['ReactJs', 'Antd Design', 'Bootstrap'],
     source: 'https://github.com/raksmeyaeu/soeungkhmer',
     visit: 'https://sreymoeunsoeungkhmer.netlify.app/',
-    id: 7,
+    id: 6,
   },
   {
     title: 'Movie Streaming Platform',
@@ -78,6 +60,6 @@ export const projects = [
     tags: ['ReactJs', 'Tailwindcss', 'TypeScript'],
     source: 'https://github.com/movie-stream-org-kh/movie-stream-web-app',
     visit: 'https://movie-stream-web-app.onrender.com/',
-    id: 8,
+    id: 7,
   },
 ];

@@ -1,5 +1,5 @@
-import { DiMongodb, DiWordpress } from "react-icons/di";
-import { SiGit, SiMysql, SiFigma, SiAdobephotoshop, SiAdobeillustrator, SiMicrosoftsqlserver, SiJira, SiTrello, SiGithub, SiGitlab, SiHtml5, SiCss3, SiJavascript, SiPhp } from "react-icons/si";
+import { DiMongodb, DiWordpress, DiDatabase } from "react-icons/di";
+import { SiGit, SiMysql, SiFigma, SiAdobephotoshop, SiAdobeillustrator, SiJira, SiTrello, SiGithub, SiGitlab, SiHtml5, SiCss3, SiJavascript, SiPhp, SiTailwindcss, SiBootstrap, SiAntdesign, SiPython } from "react-icons/si";
 import { RiNextjsFill, RiNodejsFill, RiReactjsFill } from "react-icons/ri";
 import { FaLaravel, FaShopify } from "react-icons/fa";
 
@@ -35,6 +35,24 @@ export const Skills = [
     title: "Next.js",
     Description: () => <>Server-side rendering and static generation</>,
   },
+  {
+    slug: "tailwindcss",
+    Component: SiTailwindcss,
+    title: "Tailwind CSS",
+    Description: () => <>Utility-first CSS framework</>,
+  },
+  {
+    slug: "bootstrap",
+    Component: SiBootstrap,
+    title: "Bootstrap",
+    Description: () => <>Responsive frontend toolkit</>,
+  },
+  {
+    slug: "antdesign",
+    Component: SiAntdesign,
+    title: "Ant Design",
+    Description: () => <>Enterprise-level UI design language</>,
+  },
   
   // Backend
   {
@@ -55,6 +73,12 @@ export const Skills = [
     title: "Laravel",
     Description: () => <>PHP framework for web applications</>,
   },
+  {
+    slug: "python",
+    Component: SiPython,
+    title: "Python",
+    Description: () => <>General-purpose programming language</>,
+  },
   
   // Database
   {
@@ -65,7 +89,7 @@ export const Skills = [
   },
   {
     slug: "sqlserver",
-    Component: SiMicrosoftsqlserver,
+    Component: DiDatabase,
     title: "SQL Server",
     Description: () => <>Microsoft relational database system</>,
   },

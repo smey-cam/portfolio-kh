@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-slate-300 overflow-x-hidden text-[1.25rem];
+    background: radial-gradient(circle at top, #0f172a 0%, #020617 100%);
+    background-attachment: fixed;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#0A0A0A];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#141414] rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-700;
+  }
+
+  ::selection {
+    @apply bg-[#18C5DD] text-white;
+  }
+}

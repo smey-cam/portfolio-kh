@@ -11,18 +11,21 @@
   "dependencies": {
     "caniuse-lite": "^1.0.30001724",
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.42.2",
     "google-map-react": "^2.2.1",
     "next": "14.2.4",
     "next-optimized-images": "^1.3.2",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "sharp": "^0.34.2",
-    "styled-components": "^6.1.11",
-    "styled-normalize": "^8.1.1"
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
+    "autoprefixer": "^10.5.2",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^4.3.2"
   }
 }

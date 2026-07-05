@@ -1,5 +1,5 @@
-import Theme from '../styles/theme';
-import Head from 'next/head'
+import Head from 'next/head';
+import '../styles/globals.css';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -7,9 +7,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Chham Dararaksmey</title>
       </Head>
-      <Theme>
-        <Component {...pageProps} />
-      </Theme>
+      <Component {...pageProps} />
     </>
   );
 }

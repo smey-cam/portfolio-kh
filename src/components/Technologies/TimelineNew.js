@@ -1,97 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 
-const TimelineContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    // padding-bottom: 5rem;
-    padding-top: 3rem;
-`;
-
-const TimelineItem = styled.div`
-    border-left: 2px solid #00bcd4;
-    position: relative;
-    padding-left: 30px;
-    width: 99%;
-    margin-bottom: 3rem;
-
-    @media (max-width: 768px) {
-        width: 100%;
-        padding-left: 20px;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: -7px;
-        top: 10px;
-        width: 12px;
-        height: 12px;
-        background-color: #00bcd4;
-        border-radius: 50%;
-    }
-`;
-
-const TimelineHeader = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    
-    @media (max-width: 768px) {
-        flex-direction: column;
-    }
-`;
-
-const CompanyInfo = styled.div`
-    flex: 1;
-`;
-
-const CompanyName = styled.h3`
-    font-size: 2rem;
-    color: #9cc9e3;
-    margin: 0 0 5px 0;
-    font-weight: 600;
-`;
-
-const JobTitle = styled.h4`
-    font-size: 1.6rem;
-    color: #d4c0c0;
-    margin: 0;
-    font-weight: 400;
-`;
-
-const TimelineYear = styled.div`
-    font-size: 1.6rem;
-    color: #9cc9e3;
-    font-weight: 600;
-    
-    @media (max-width: 768px) {
-        margin-top: 5px;
-    }
-`;
-
-const TimelineEvents = styled.ul`
-    margin: 15px 0 0 0;
-    padding-left: 20px;
-    list-style-type: disc;
-`;
-
-const TimelineEvent = styled.li`
-    margin: 10px 0;
-    line-height: 1.6;
-    font-size: 1.4rem;
-    color: #e4e6e7;
-`;
+const itemVariants = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 const Timeline = () => {
     const timelineData = [
         {
             year: '2021 - Present',
             company: 'ARH Technologies',
-            title: 'Web Developer & Team Leader',
+            title: 'Web Developer',
             events: [
                 'Led a team of web developers to design and deliver customized web applications based on client requirements.',
                 'Developed and maintained full-stack solutions using React.js, Next.js, Node.js.',
@@ -102,9 +23,23 @@ const Timeline = () => {
             ],
         },
         {
+            year: '02.05.2026 – 31.05.2026',
+            company: 'ISTC Kampong Chhnang Campus',
+            title: 'Internet Programming (HTML & CSS, Tech University)',
+            events: [
+                'Developed multiple static web pages using HTML5 and CSS3 as part of Internet Programming coursework',
+                'Built structured layouts using semantic HTML elements such as header, section, article, and footer',
+                'Designed responsive user interfaces using CSS techniques including Flexbox and basic Grid layout',
+                'Applied CSS styling for typography, colors, spacing, and visual hierarchy to improve UI design',
+                'Practiced form creation and input validation using HTML form elements',
+                'Worked on small projects such as personal profile page, simple landing page, and basic website layout',
+                'Improved understanding of web development fundamentals, including browser rendering and front-end structure'
+            ],
+        },
+        {
             year: '2023 - 2024',
             company: 'Asia Euro University',
-            title: 'Microsoft Office (Teacher)',
+            title: 'Microsoft Office (Tech University)',
             events: [
                 'Taught Microsoft Office tools including Word, Excel, PowerPoint, and Outlook to university students.',
                 'Prepared structured lesson plans, learning materials, and practical exercises.',
@@ -138,24 +73,39 @@ const Timeline = () => {
     ];
 
     return (
-        <TimelineContainer>
-            {timelineData.map((data, idx) => (
-                <TimelineItem key={idx}>
-                    <TimelineHeader>
-                        <CompanyInfo>
-                            <CompanyName>{data.company}</CompanyName>
-                            <JobTitle>{data.title}</JobTitle>
-                        </CompanyInfo>
-                        <TimelineYear>{data.year}</TimelineYear>
-                    </TimelineHeader>
-                    <TimelineEvents>
-                        {data.events.map((event, eventIdx) => (
-                            <TimelineEvent key={eventIdx}>{event}</TimelineEvent>
-                        ))}
-                    </TimelineEvents>
-                </TimelineItem>
-            ))}
-        </TimelineContainer>
+        <Section id="experience" className="z-10">
+            <SectionTitle main>Work Experience</SectionTitle>
+            <SectionDivider divider />
+            <div className="flex flex-col items-center pt-12 w-full max-w-4xl mx-auto">
+                {timelineData.map((data, idx) => (
+                    <motion.div 
+                      key={idx} 
+                      variants={itemVariants}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, margin: "-50px" }}
+                      className="border-l-2 border-cyan-400/50 relative pl-8 md:pl-12 w-full mb-12 before:content-[''] before:absolute before:-left-[9px] before:top-2 before:w-4 before:h-4 before:bg-slate-900 before:border-2 before:border-cyan-400 before:rounded-full group hover:before:bg-cyan-400 hover:before:shadow-[0_0_15px_rgba(34,211,238,1)] before:transition-all before:duration-300"
+                    >
+                        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                            <div className="flex-1">
+                                <h3 className="text-xl md:text-2xl font-bold text-white mb-1 tracking-wide group-hover:text-cyan-400 transition-colors duration-300">{data.company}</h3>
+                                <h4 className="text-base md:text-lg text-purple-400 font-medium tracking-wide">{data.title}</h4>
+                            </div>
+                            <div className="text-xs md:text-sm text-cyan-300 font-bold mt-3 md:mt-0 px-4 py-1.5 bg-cyan-500/10 rounded-full border border-cyan-500/30 tracking-widest uppercase">
+                                {data.year}
+                            </div>
+                        </div>
+                        <ul className="mt-4 space-y-3">
+                            {data.events.map((event, eventIdx) => (
+                                <li key={eventIdx} className="relative pl-5 leading-relaxed text-sm md:text-base text-slate-300/80 group-hover:text-white transition-colors duration-300 before:content-[''] before:absolute before:left-0 before:top-[8px] before:w-1.5 before:h-1.5 before:bg-purple-500/50 before:rounded-full">
+                                    {event}
+                                </li>
+                            ))}
+                        </ul>
+                    </motion.div>
+                ))}
+            </div>
+        </Section>
     );
 };
 
